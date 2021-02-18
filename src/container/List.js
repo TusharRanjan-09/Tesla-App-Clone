@@ -4,8 +4,10 @@ import { StyleSheet, Text, View, Image, FlatList,Dimensions } from 'react-native
 import cars from './data';
 import Index from '../components/index';
 const List = (props) => {
+const Width = Dimensions.get('screen').width;
+const Height = Dimensions.get('screen').height;
     return (
-        <View style={{flex:1, backgroundColor: 'red'}}>
+        <View style={{width:Width,height:Height, backgroundColor: 'red'}}>
             <FlatList
             data={cars}
             renderItem={({item,index})=> <Index car={item} />}
