@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
+const Width = Dimensions.get('screen').width;
+const Height = Dimensions.get('screen').height;
 const styles = StyleSheet.create({
     container: {
         width: 400,
         height:759.5,
-       backgroundColor: 'blue'
-     
     },
     title: {
         color: 'black',

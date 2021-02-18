@@ -7,7 +7,7 @@ const List = (props) => {
 const Width = Dimensions.get('screen').width;
 const Height = Dimensions.get('screen').height;
     return (
-        <View style={{width:Width,height:Height, backgroundColor: 'red'}}>
+        <View style={{width:Width,height:Height,}}>
             <FlatList
             data={cars}
             renderItem={({item,index})=> <Index car={item} />}
