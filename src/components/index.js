@@ -13,8 +13,8 @@ const Index = (props) => {
             <Text style={styles.title}>{props.car.name}</Text>
             <Text style={styles.title2}>{props.car.tagName}</Text>
             <View style={styles.btnContainer}>
-                <CustomButton type="primary" content="Custom order" onPress={() => { console.warn('hey joe biden') }} />
-                <CustomButton type="secondary" content="Existing Inventory" onPress={() => { console.warn('Bush Me') }} />
+                <CustomButton type="primary" content="Custom order" onPress={() => {alert('Custom order') }} />
+                <CustomButton type="secondary" content="Existing Inventory" onPress={() => {alert('Existing Inventory') }} />
             </View>
 
         </View>
