@@ -5,9 +5,8 @@ import styles from './styles';
 import CustomButton from './CustomButton';
 import Header from '../Header/index';
 const Index = (props) => {
-
     return (
-        <View style={styles.container}>
+        <View style={styles.container} key={props.ky}>
             <Header />
             <Image style={styles.img} source={props.car.uri} />
             <Text style={styles.title}>{props.car.name}</Text>

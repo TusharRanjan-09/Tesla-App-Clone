@@ -10,7 +10,7 @@ const Height = Dimensions.get('screen').height;
         <View style={{width:Width,height:Height,}}>
             <FlatList
             data={cars}
-            renderItem={({item,index})=> <Index car={item} />}
+            renderItem={({item,id})=> <Index car={item} ky={item.id} />}
             showsVerticalScrollIndicator={false}
             snapToAlignment={'start'}
             decelerationRate={'fast'}
